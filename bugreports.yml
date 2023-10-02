@@ -1,0 +1,27 @@
+---
+- summary: |
+    Сайт не отвечает требованиям мобильной версии
+  environment: |
+    Browser Chome 117.0.5938.92 (Официальная сборка) (64 бит)
+    OC Windows 10 Pro 22H2
+  steps-to-reproduce: |
+-   Открыта главная страница https://hexlet-products-store.vercel.app/
+-   Открываем devtools 
+-   Выбираем в размерах экрана "Iphone SE" 
+  expected-result: |
+    Сайт имеет мобильную версию
+  actual-result: |
+    Сайт не соотвествует требованиям мобильной версии
+
+- summary: |
+    Сайт не отвечает требованиям кроссбраузерности
+  environment: |
+    Browser Chome 117.0.5938.92 (Официальная сборка) (64 бит)
+    OC Windows 10 Pro 22H2
+  steps-to-reproduce: |
+-   Открыт сайт https://www.browserling.com/browser-sandbox
+-   Вводим в окно ссылку https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Сайт является кроссбраузерным
+  actual-result: |
+    Сайт не открывается в браузере Safari ver. 5.1 и браузере Tor ver.  12.5
