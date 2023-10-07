@@ -5,6 +5,8 @@
    Пользователь должен иметь возможность добавлять товары в корзину и просматривать содержимое корзины
 - prerequisites: |
    Открыта главная страница https://hexlet-products-store.vercel.app/
+- test-data: |
+    []
 - steps:
     - Выбираем любой товар из представленных на странице
     - Открываем devtools
@@ -15,10 +17,12 @@
 
 - summary: |
    Проверка успешного поиска товара по ключевому слову 
-  requirement: |
+- requirement: |
    Пользователь должен иметь возможность искать товары по ключевому слову или категории
 - prerequisites:
    Открыта главная страница https://hexlet-products-store.vercel.app/
+- test-data: |
+    []
 - steps:
     - В строку поиска вводим "watch"
     - Очистить строку поиска
@@ -28,10 +32,12 @@
 
 - summary: |
    Проверка успешного поиска товара по категории
-  requirement: |
+- requirement: |
    Пользователь должен иметь возможность искать товары по ключевому слову или категории
 - prerequisites:
    Открыта главная страница https://hexlet-products-store.vercel.app/
+- test-data: |
+    []
 - steps:
     - Выбрать категорию " laptops" 
     - Убедиться что все выведенные товары соответсвуют заданной категории
@@ -44,6 +50,8 @@
       При поиске несуществующего товара пользователю выводится сообщение "Ничего не найдено!" или "Nothing found!"
 - prerequisites:
       Открыта главная страница https://hexlet-products-store.vercel.app/
+- test-data: |
+    []
 -  steps:
     - В строку поиска вводим "shower gel"
 - expected-result: |
@@ -55,6 +63,8 @@
     Пользователь должен иметь возможность фильтровать товары
 - prerequisites: |
    Открыта главная страница https://hexlet-products-store.vercel.app/
+- test-data: |
+    []
 - steps:
     - Вбиваем в параметр "цена" диапазон от 100 до 500
     - Смотрим что выданные сайтом товары соответствуют указанному диапазону
@@ -67,6 +77,8 @@
    Пользователь должен иметь возможность фильтровать товары
 - prerequisites: |
    Открыта главная страница https://hexlet-products-store.vercel.app/
+- test-data: |
+    []
 - steps:
     - Выбираем  из представленных производителей "OPPO"
 - expected-result: |
@@ -78,6 +90,8 @@
    Пользователь должен иметь возможность просматривать товары и просматривать подробную информацию о товаре
 - prerequisites: |
    Открыта главная страница https://hexlet-products-store.vercel.app/
+- test-data: |
+    []
 - steps:
     - Выбираем товар Brown Perfume
     - Выбираем товар со второй страницы Sneaker shoes 
@@ -90,6 +104,8 @@
    Сайт должен быть безопасным и защищать данные пользователя
 - prerequisites: |
    Открыта главная страница https://hexlet-products-store.vercel.app/
+- test-data: |
+    []
 - steps: 
     - В окошке поиска вводим "<h1>Заголовок первого уровня</h1>"
 - expected-result: |
@@ -101,6 +117,8 @@
    Сайт должен иметь мобильную версию
 - prerequisites: |
    Открыта главная страница https://hexlet-products-store.vercel.app/
+- test-data: |
+    []
 - steps:
     - Открываем devtools
     - Выбираем размеры экрана "Iphone SE"
@@ -115,6 +133,8 @@
    Сайт должен быть протестирован на совместимость с последними версиями браузеров
 - prerequisites: |
    Открыт сайт https://www.browserling.com/browser-sandbox
+- test-data: |
+    []
 - steps:
     - На сайте  https://www.browserling.com/browser-sandbox введем в окошко поиска hexlet-products-store.vercel.app
     - Проверим сайт на кроссбраузерность на всех доступных браузерах и их последних версиях
@@ -128,6 +148,8 @@
    Пользователь должен иметь возможность заказать товар и просматривать сделанные заказы
 - prerequisites: |
    Открыта главная страница https://hexlet-products-store.vercel.app/
+- test-data: |
+    []
 - steps:
     - Открываем devtools
     - Добавляем в корзину любой товар
@@ -141,6 +163,8 @@
    Сайт должен быть доступен на различных устройствах
 - prerequisites: |
    Необходим доступ к смартфону любой модели
+- test-data: |
+    []
 - steps:
     - Открываем https://hexlet-products-store.vercel.app/ на компьютере
     - Открываем https://hexlet-products-store.vercel.app/ на смартфоне
