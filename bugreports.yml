@@ -5,13 +5,14 @@
     Browser Chome 117.0.5938.92 (Официальная сборка) (64 бит)
     OC Windows 10 Pro 22H2
   steps-to-reproduce: |
--   Открыта главная страница https://hexlet-products-store.vercel.app/
--   Открываем devtools 
--   Выбираем в размерах экрана "Iphone SE" 
+    1. Открыта главная страница https://hexlet-products-store.vercel.app/
+    2. Открываем devtools 
+    3. Выбираем в размерах экрана "Iphone SE"
+    4. Выбираем в размерах экрана "Samsung galaxy A51/71"
   expected-result: |
     Сайт имеет мобильную версию
   actual-result: |
-    Сайт не соотвествует требованиям мобильной версии (файл bug1)
+    Сайт не соответствует требованиям мобильной версии (файл bug1)
 
 - summary: |
     Сайт не отвечает требованиям кроссбраузерности
@@ -19,21 +20,21 @@
     Browser Chome 117.0.5938.92 (Официальная сборка) (64 бит)
     OC Windows 10 Pro 22H2
   steps-to-reproduce: |
--   Открыт сайт https://www.browserling.com/browser-sandbox
--   Вводим в окно ссылку https://hexlet-products-store.vercel.app/
+    1. Открыт сайт https://www.browserling.com/browser-sandbox
+    2. Вводим в окно ссылку https://hexlet-products-store.vercel.app/
   expected-result: |
     Сайт является кроссбраузерным
   actual-result: |
     Сайт не открывается в браузере Safari ver. 5.1 и браузере Tor ver.  12.5 (файлы bug2, bug3)
 
- - summary: |
+- summary: |
     Товар не находится по ключевому слову, если не открыта страница где находится этот товар
   environment: |
     Browser Chome 117.0.5938.92 (Официальная сборка) (64 бит)
     OC Windows 10 Pro 22H2
   steps-to-reproduce: |
--   Открыта главная страница https://hexlet-products-store.vercel.app/
--   В строку поиска товара вводим "watch" 
+    1. Открыта главная страница https://hexlet-products-store.vercel.app/
+    2. В строку поиска товара вводим watch 
   expected-result: |
     Пользователь должен иметь возможность искать товары по ключевому слову
   actual-result: |
@@ -45,21 +46,21 @@
     Browser Chome 117.0.5938.92 (Официальная сборка) (64 бит)
     OC Windows 10 Pro 22H2
   steps-to-reproduce: |
--   Открыта главная страница https://hexlet-products-store.vercel.app/ 
+    1. Открыта главная страница https://hexlet-products-store.vercel.app/ 
   expected-result: |
     Пользователь должен иметь возможность искать товары по категории
   actual-result: |
-    Если не открыта страница сайта на которой располагаютя товары из нужной категории, то категория не отображается в списке, пока мы не дойдем до страницы с нужным товаром. Функция, как таковая, потеряла смысл
+    Если не открыта страница сайта на которой располагаютя товары из нужной категории, то категория не отображается в списке, пока мы не дойдем до страницы с нужным товаром
 
 - summary: |
-    Запрос на добавления товара в корзину даже не уходит на сервер
+    Запрос на добавления товара в корзину  не уходит на сервер
   environment: |
     Browser Chome 117.0.5938.92 (Официальная сборка) (64 бит)
     OC Windows 10 Pro 22H2
   steps-to-reproduce: |
--   Открыта главная страница https://hexlet-products-store.vercel.app/
--   Открываем devtools 
--   Добавляем в корзину любой товар 
+    1. Открыта главная страница https://hexlet-products-store.vercel.app/
+    2. Открываем devtools 
+    3. Добавляем в корзину любой товар 
   expected-result: |
     Пользователь должен иметь возможность добавлять товары в корзину
   actual-result: |
@@ -71,12 +72,12 @@
     Browser Chome 117.0.5938.92 (Официальная сборка) (64 бит)
     OC Windows 10 Pro 22H2
   steps-to-reproduce: |
--   Открыта главная страница https://hexlet-products-store.vercel.app/
--   Открываем devtools 
--   Добавляем в корзину любой товар
--   Нажимаем кнопку "Оформить заказ"
+    1. Открыта главная страница https://hexlet-products-store.vercel.app/
+    2. Открываем devtools 
+    3. Добавляем в корзину любой товар
+    4. Нажимаем кнопку "Оформить заказ"
   expected-result: |
     Пользователь должен иметь возможность заказывать товары и просматривать сделанные заказы
   actual-result: |
-    При попытке заказать товар выходит ошибка "500 Internal Server Error" ( файл bug5)
+    При попытке заказать товар выходит ошибка "500 Internal Server Error" (файл bug5)
 
