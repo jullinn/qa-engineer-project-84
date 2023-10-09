@@ -16,7 +16,7 @@ test-cases:
       Поиск несуществующего товара по ключевому слову 
     status: fail
   
-   - summary: |
+  - summary: |
       Проверка фильтрации товаров по цене 
     status: pass
     
