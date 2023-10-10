@@ -2,51 +2,51 @@
 test-cases:
   - summary: |
       Проверка успешного добавления товара в корзину и просмотр корзины
-    status: pass
+  status: pass
 
   - summary: |
       Проверка успешного поиска товара по ключевому слову
-    status: fail
+  status: fail
 
   - summary: |
       Проверка успешного поиска товара  по категории
-    status: fail
+  status: fail
 
   - summary: |
       Поиск несуществующего товара по ключевому слову 
-    status: fail
+  status: fail
   
   - summary: |
       Проверка фильтрации товаров по цене 
-    status: pass
+  status: pass
     
   - summary: |
       Проверка фильтрации товаров по производителю
-    status: fail
+  status: fail
 
   - summary: |
       Проверка возможности просматривания товара и просматривания его краткого описания 
-    status: pass
+  status: pass
 
   - summary: |
       Проверка сайта на безопасность и защиту от кибератак
-    status: pass
+  status: pass
 
   - summary: |
       Проверка сайта на наличие мобильной версии
-    status: pass
+  status: pass
 
   - summary: |
       Проверка сайта на кроссбраузерность
-    status: fail
+  status: fail
 
   - summary: |
       Проверка возможности заказа товара и просматривания уже сделанных заказов
-    status: fail
+  status: fail
 
   - summary: |
       Проверка сайта на доступность для различных устройств
-    status: pass
+  status: pass
 
 
     bugreports:
