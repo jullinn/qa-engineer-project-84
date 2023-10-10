@@ -53,8 +53,8 @@ test-cases:
   - summary: |
       Поиск несуществующего товара по ключевому слову
     environment: |
-       Browser Chome 117.0.5938.92 (Официальная сборка) (64 бит)
-       OC Windows 10 Pro 22H2
+      Browser Chome 117.0.5938.92 (Официальная сборка) (64 бит)
+      OC Windows 10 Pro 22H2
     steps-to-reproduce: |
       - Открыта главная страница https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       - В строке поиска вбиваем "Shower gel"
