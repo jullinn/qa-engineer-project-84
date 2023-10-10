@@ -52,15 +52,15 @@ test-cases:
     bugreports:
   - summary: |
       Поиск несуществующего товара по ключевому слову
-  - environment: |
+    environment: |
        Browser Chome 117.0.5938.92 (Официальная сборка) (64 бит)
        OC Windows 10 Pro 22H2
-  - steps-to-reproduce: |
+    steps-to-reproduce: |
       - Открыта главная страница https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       - В строке поиска вбиваем "Shower gel"
-  - expected-result: |
+    expected-result: |
       При поиске несуществующего товара выводится надпись "Ничего не найдено!" или "Nothing found!"
-  - actual-result: |
+    actual-result: |
       При поиске несуществующего товара сайт просто выводит товары на странице, без сообщения "Ничего не найдено!" или "Nothing found!"
 
 
