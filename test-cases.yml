@@ -19,7 +19,7 @@ expected-result: |
       Проверка успешного поиска товара по ключевому слову 
 requirement: |
       Пользователь должен иметь возможность искать товары по ключевому слову или категории
-prerequisites:
+prerequisites: |
       Открыта главная страница https://hexlet-products-store.vercel.app/
 test-data: |
       []
