@@ -1,171 +1,171 @@
 ---
--	summary: |
+- summary: |
       Проверка успешного добавления товара в корзину и просмотр корзины
-	requirement: |
+requirement: |
       Пользователь должен иметь возможность добавлять товары в корзину и просматривать содержимое корзины
-	prerequisites: |
-      Открыта главная страница https://hexlet-products-store.vercel.app/
-	test-data: |
+prerequisites: |
+	Открыта главная страница https://hexlet-products-store.vercel.app/
+test-data: |
       []
-	steps:
+steps:
       - Выбираем любой товар из представленных на странице
       - Открываем devtools
       - Нажимаем кнопку "В корзину"
       - Нажимаем кнопку " Корзина"
-	expected-result: |
+expected-result: |
       Товар успешно добавлен в корзину, корзина открывается и просматриваются выбранные нами товары
 
 - summary: |
       Проверка успешного поиска товара по ключевому слову 
-	requirement: |
+requirement: |
       Пользователь должен иметь возможность искать товары по ключевому слову или категории
-	prerequisites: |
+prerequisites: |
       Открыта главная страница https://hexlet-products-store.vercel.app/
-	test-data: |
+test-data: |
       []
-	steps:
+steps:
       - В строку поиска вводим "watch"
       - Очистить строку поиска
       - В строку поиска вводим "shoes"
-	expected-result: |
+expected-result: |
       Успешно выводятся товары отвечающие ключевому слову
 
--	summary: |
+- summary: |
       Проверка успешного поиска товара по категории
-	requirement: |
+requirement: |
       Пользователь должен иметь возможность искать товары по ключевому слову или категории
-	prerequisites:
+prerequisites:
       Открыта главная страница https://hexlet-products-store.vercel.app/
-	test-data: |
+test-data: |
       []
-	steps:
+steps:
       - Выбрать категорию " laptops" 
       - Убедиться что все выведенные товары соответсвуют заданной категории
-	expected-result: |
+expected-result: |
       Успешно выводятся товары из выбранной категории
       
--	summary: |
+- summary: |
       Поиск несуществующего товара по ключевому слову 
-	requirement: |
+requirement: |
       При поиске несуществующего товара пользователю выводится сообщение "Ничего не найдено!" или "Nothing found!"
-	prerequisites:
+prerequisites:
       Открыта главная страница https://hexlet-products-store.vercel.app/
-	test-data: |
+test-data: |
       []
-	steps:
+steps:
       - В строку поиска вводим "shower gel"
-	expected-result: |
+expected-result: |
       При поиске несуществующего товара пользователю выводится сообщение "Ничего не найдено!" или "Nothing found!"
 
--	summary: |
+- summary: |
       Проверка фильтрации товаров по цене
-	requirement: |
+requirement: |
       Пользователь должен иметь возможность фильтровать товары
-	prerequisites: |
+prerequisites: |
       Открыта главная страница https://hexlet-products-store.vercel.app/
-	test-data: |
+test-data: |
             []
-	steps:
+steps:
       - Вбиваем в параметр "цена" диапазон от 100 до 500
       - Смотрим что выданные сайтом товары соответствуют указанному диапазону
-	expected-result: |
+expected-result: |
       Товары фильтруются по критерию "цена"
    
--	summary: |
+- summary: |
       Проверка фильтрации товаров по производителю
-	requirement: |
+requirement: |
       Пользователь должен иметь возможность фильтровать товары
-	prerequisites: |
+prerequisites: |
       Открыта главная страница https://hexlet-products-store.vercel.app/
-	test-data: |
+test-data: |
       []
-	steps:
+steps:
       - Выбираем  из представленных производителей "OPPO"
-	expected-result: |
+expected-result: |
       Товары фильтруются по критерию "производитель"
 
--	summary: |
+- summary: |
       Проверка возможности просматривания товара и просматривания его краткого описания 
-	requirement: |
+requirement: |
       Пользователь должен иметь возможность просматривать товары и просматривать подробную информацию о товаре
-	prerequisites: |
+prerequisites: |
       Открыта главная страница https://hexlet-products-store.vercel.app/
-	test-data: |
+test-data: |
       []
-	steps:
+steps:
       - Выбираем товар Brown Perfume
       - Выбираем товар со второй страницы Sneaker shoes 
-	expected-result: |
+expected-result: |
       Можно просмотреть каждый товар и его краткое описание 
     
--	summary: |
+- summary: |
       Проверка сайта на безопасность и защиту от кибератак
-	requirement: |
+requirement: |
       Сайт должен быть безопасным и защищать данные пользователя
-	prerequisites: |
+prerequisites: |
       Открыта главная страница https://hexlet-products-store.vercel.app/
-	test-data: |
+test-data: |
       []
-	steps: 
+steps: 
       - В окошке поиска вводим "<h1>Заголовок первого уровня</h1>"
-	expected-result: |
+expected-result: |
       Сайт отвечает требованиям безопасности 
     
--	summary: |
+- summary: |
       Проверка сайта на наличие мобильной версии
-	requirement: |
+requirement: |
       Сайт должен иметь мобильную версию
-	prerequisites: |
+prerequisites: |
       Открыта главная страница https://hexlet-products-store.vercel.app/
-	test-data: |
+test-data: |
       []
-	steps:
+steps:
       - Открываем devtools
       - Выбираем размеры экрана "Iphone SE"
       - Выбираем размеры экрана "Ipad mini"
       - Выбираем размеры экрана "Samsung Galaxy A51/71"
-	expected-result: |
+expected-result: |
       Сайт имеет мобильную версию, подстраивается под параметры различных устройств
 
--	summary: |
+- summary: |
       Проверка сайта на кроссбраузерность
-	requirement: |
+requirement: |
       Сайт должен быть протестирован на совместимость с последними версиями браузеров
-	prerequisites: |
+prerequisites: |
       Открыт сайт https://www.browserling.com/browser-sandbox
-	test-data: |
+test-data: |
       []
-	steps:
+steps:
       - На сайте  https://www.browserling.com/browser-sandbox введем в окошко поиска hexlet-products-store.vercel.app
       - Проверим сайт на кроссбраузерность на всех доступных браузерах и их последних версиях
-	expected-result: |
+expected-result: |
       Сайт отвечает требованиям кроссбраузерности 
 
--	summary: |
+- summary: |
       Проверка возможности заказа товара и просматривания уже сделанных заказов
-	requirement: |
+requirement: |
       Пользователь должен иметь возможность заказать товар и просматривать сделанные заказы
-	prerequisites: |
+prerequisites: |
       Открыта главная страница https://hexlet-products-store.vercel.app/
-	test-data: |
+test-data: |
       []
-	steps:
+steps:
       - Открываем devtools
       - Добавляем в корзину любой товар
       - Заходим в корзину и нажимаем "Оформить заказ" или "Checkout"
-	expected-result: |
+expected-result: |
       Пользователь может заказать товар и просмотреть сделанные заказы
 
--	summary: |
+- summary: |
       Проверка сайта на доступность для различных устройств
-	requirement: |
+requirement: |
       Сайт должен быть доступен на различных устройствах
-	prerequisites: |
+prerequisites: |
       Необходим доступ к смартфону любой модели с доступом к браузеру
-	test-data: |
+test-data: |
       []
-	steps:
+steps:
       - Открываем https://hexlet-products-store.vercel.app/ на компьютере
       - Открываем https://hexlet-products-store.vercel.app/ на смартфоне
-	expected-result: |
+expected-result: |
       Сайт доступен на различных устройствах 
