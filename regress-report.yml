@@ -2,65 +2,65 @@
 test-cases:
   - summary: |
       Проверка успешного добавления товара в корзину и просмотр корзины
-  status: pass
+    status: pass
 
   - summary: |
       Проверка успешного поиска товара по ключевому слову
-  status: fail
+    status: fail
 
   - summary: |
       Проверка успешного поиска товара  по категории
-  status: fail
+    status: fail
 
   - summary: |
       Поиск несуществующего товара по ключевому слову 
-  status: fail
+    status: fail
   
   - summary: |
       Проверка фильтрации товаров по цене 
-  status: pass
+    status: pass
     
   - summary: |
       Проверка фильтрации товаров по производителю
-  status: fail
+    status: fail
 
   - summary: |
       Проверка возможности просматривания товара и просматривания его краткого описания 
-  status: pass
+    status: pass
 
   - summary: |
       Проверка сайта на безопасность и защиту от кибератак
-  status: pass
+    status: pass
 
   - summary: |
       Проверка сайта на наличие мобильной версии
-  status: pass
+    status: pass
 
   - summary: |
       Проверка сайта на кроссбраузерность
-  status: fail
+    status: fail
 
   - summary: |
       Проверка возможности заказа товара и просматривания уже сделанных заказов
-  status: fail
+    status: fail
 
   - summary: |
       Проверка сайта на доступность для различных устройств
-  status: pass
+    status: pass
 
 
     bugreports:
   - summary: |
       Поиск несуществующего товара по ключевому слову
-  environment: |
+    environment: |
       Browser Chome 117.0.5938.92 (Официальная сборка) (64 бит)
       OC Windows 10 Pro 22H2
-  steps-to-reproduce: |
+    steps-to-reproduce: |
       - Открыта главная страница https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       - В строке поиска вбиваем "Shower gel"
-  expected-result: |
+    expected-result: |
       При поиске несуществующего товара выводится надпись "Ничего не найдено!" или "Nothing found!"
-  actual-result: |
+    actual-result: |
       При поиске несуществующего товара сайт просто выводит товары на странице, без сообщения "Ничего не найдено!" или "Nothing found!"
 
 
