@@ -49,7 +49,7 @@ test-cases:
     status: pass
 
 
-    bugreports:
+  bugreports:
   - summary: |
       Поиск несуществующего товара по ключевому слову
     environment: |
